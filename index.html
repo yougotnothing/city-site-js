@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/src/public/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style/modal.css">
+    <link rel="stylesheet" href="/src/style/style.css">
+    <title>Gdansk</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="/src/public/logo.png" alt="logo" class="GoitLogo">
+            <select name="changeLanguage" class="changeLanguage">
+                <option class="plLanguage" onclick="LangToPL()">PL</option>
+                <option class="uaLanguage" onclick="LangToUA()">UA</option>
+            </select>
+        </div>
+        <div class="wrapper">
+                <div class="cityInfo">
+                <h1 class="header">Gdańsk</h1>
+                <p class="paragrapf">
+                    Gdańsk jest znany jako jeden z najważniejszych portów w Europie Północnej.
+                    W przeszłości był członkiem Hanzy i jednym z najbogatszych miast w Polsce,
+                    prosperującym na handlu bursztynem i łączącym wschód i centrum kontynentu europejskiego.
+                    Pomimo zniszczeń II wojny światowej, Gdańsk słynie ze wspaniałej architektury,
+                    wielu interesujących zabytków i wspaniałej atmosfery starego miasta portowego.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="secondContainer">
+        <h2 class="slogan">Nec temere, nec timide</h2>
+            <div class="cityImages">
+                <button class="photoButton" data-micromodal-trigger="modal" data-index="0">
+                    <img src="/src/pictures/1.jpg" alt="main city" class="photo">
+                </button>
+                <button class="photoButton" data-micromodal-trigger="modal" data-index="1">
+                    <img src="/src/pictures/2.jpg" alt="forum city mall" class="photo">
+                </button>
+                <button class="photoButton" data-micromodal-trigger="modal" data-index="2">
+                    <img src="/src/pictures/3.jpg" alt="main city" class="photo">
+                </button>
+                <button class="photoButton" data-micromodal-trigger="modal" data-index="3">
+                    <img src="/src/pictures/4.jpg" alt="river in main city" class="photo">
+                </button>
+                <button class="photoButton" data-micromodal-trigger="modal" data-index="4">
+                    <img src="/src/pictures/5.jpg" alt="olivia star" class="photo">
+                </button>
+                <button class="photoButton" data-micromodal-trigger="modal" data-index="5">
+                    <img src="/src/pictures/6.jpg" alt="main city" class="photo">
+                </button>
+                <button class="photoButton" data-micromodal-trigger="modal" data-index="6">
+                    <img src="/src/pictures/7.jpg" alt="amber sky" class="photo">
+                </button>
+                <button class="photoButton" data-micromodal-trigger="modal" data-index="7">
+                    <img src="/src/pictures/8.jpg" alt="museum of WWII" class="photo">
+                </button>
+            </div>
+        </div>
+        <div class="modal micromodal-slide" id="modal" aria-hidden="true">
+            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+                    <header class="modal__header">
+                        <h2 class="modal__title" id="modal-title">
+                            Zdjęcie Gdańska
+                        </h2>
+                        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                    </header>
+                    <main class="modal__content" id="modal-content">
+                        <div class="splide" role="group" aria-label="city-gallery">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <img src="/src/pictures/1.jpg" alt="">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="/src/pictures/2.jpg" alt="">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="/src/pictures/3.jpg" alt="">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="src/pictures/4.jpg" alt="">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="/src/pictures/5.jpg" alt="">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="/src/pictures/6.jpg" alt="">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="/src/pictures/7.jpg" alt="">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="/src/pictures/8.jpg" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+        <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+        <script src="/src/js/gallery.js"></script>
+        <script src="/src/js/Change-Language.js"></script>
+</body>
+</html>

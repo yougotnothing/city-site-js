@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap');
+
+html,
+body {
+    background-color: #101010;
+    margin: 0;
+    color: #fffad7;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+ .paragrapf {
+    font-family: 'Roboto Mono', monospace;
+ }
+
+ .container {
+    background: url("/src/public/background.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    position: relative;
+    width: 1170px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;    
+}
+
+.cityInfo {
+    font-size: 20px;
+    background-color: #101010fb;
+    width: 573px;
+    border-radius: 40px;
+    padding: 60px;
+    box-sizing: border-box;
+}
+
+.secondContainer {
+    background-color: #101010;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 44px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.changeLanguage {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 20px;
+    background: fixed;
+    color:#87b1ff;
+    position: absolute;
+    left: 1280px;
+    top: 15px;
+    cursor: pointer;
+    border-color: #2a2a2a00;
+}
+
+.navbar {
+    top: 0;
+    background-color: #000000d0;
+    width: 100vw;
+    height: 70px;
+}
+
+.GoitLogo {
+    position: absolute;
+    left: 295px;
+    top: 15px;
+}
+
+.cityImages {
+    margin-top: 190px;
+    border-radius: 37px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 0px;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px; 
+}
+
+.slogan {
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 48px;
+    margin-top: 0;
+}
+
+.photo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    width: 100%;
+    height: 100%;
+    border-radius: 48px;
+    padding: 0;
+}
+
+.photoButton {
+    width: calc(25% - 24px * 3 / 4);
+    height: 250px;
+    background-color: #10101000;
+    border: none;
+    border-radius: 48px;
+    cursor: pointer;
+}
